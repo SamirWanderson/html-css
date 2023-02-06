@@ -10,14 +10,19 @@
     --fonte3: 'Sriracha', cursive;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 header {
@@ -25,26 +30,22 @@ header {
     color: white;
 }
 
-header > h1 {
+header>h1 {
     font-family: var(--fonte2);
     font-size: 10vw;
     font-variant: small-caps;
-    text-align: center ;
+    text-align: center;
     padding-top: 50px;
 }
 
-header > p {
-   font-family: var(--fonte1);
-   text-align: center;
-   padding-bottom: 50px;
-   
+header>p {
+    font-family: var(--fonte1);
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 
-::-webkit-scrollbar {
-        display: none;
-    
-}
+
 
 section p {
     font-family: var(--fonte3);
@@ -58,7 +59,6 @@ section p {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    
 }
 
 section.normal {
@@ -72,10 +72,9 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
 }
 
-section.imagem > p {
+section.imagem>p {
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
-   
 }
 
 section#img01 {
