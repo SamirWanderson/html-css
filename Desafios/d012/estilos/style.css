@@ -40,12 +40,52 @@ header > p {
    
 }
 
+
+::-webkit-scrollbar {
+        display: none;
+    
+}
+
 section p {
     font-family: var(--fonte3);
     font-size: 3.5vw;
     margin-left: 30px;
     margin-top: 65px;
     line-height: 2em;
+    display: inline-block;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(51, 51, 51, 0.342);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+   
+}
+
+section#img01 {
+    background: url(../imagens/background001.jpg) no-repeat fixed right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background: url(../imagens/background002.jpg) no-repeat fixed right center;
+    background-size: cover;
 }
 
 a {
@@ -64,9 +104,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-section.normal {
-    background-color: white;
-    color: black;
 }
