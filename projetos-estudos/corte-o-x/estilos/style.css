@@ -26,7 +26,7 @@ header {
 header > h1 {
     font-family:var(--fonte02);
     font-size: 10vh;
-
+    text-shadow: 1px 1px #00000066;
     color: white;
     text-align: center;
 }
@@ -35,31 +35,39 @@ header > p {
     font-family: var(--fonte01);
     font-weight: 600;
     font-size: 1em;
-    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%)
     padding-top: 20px;
     margin-bottom: 30px;
     text-align: center;
     color: white;
 }
 
+nav {
+    animation-duration: 5s;
+
+}
+
 a {
     font-family: var(--fonte01);
     font-size: 1.2em;
     font-weight: bold;
-    color: rgb(250, 100, 100);
+    color: #ff0000;
     text-decoration: none;
     text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
     padding: 3px;
     border-radius: 5px;
     margin-bottom: 0px;
     margin-right: 10px;
+
 }
 
 a:hover {
-    color: #bb0101;
+    color: #9e0101;
     background-color: #ff0000;
     text-decoration: underline;
     text-shadow: none;
+    animation-duration: 1s;
+
 }
 
 
@@ -74,5 +82,23 @@ main {
     padding: 20px;
     min-width: 300px;
     max-width: 800px;
+    box-shadow: 1px black;
+}
+
+footer {
+    position: relative;
+    font-family: var(--fonte01);
     border-radius: 0px 0px 8px 8px;
+    background-color: rgba(201, 198, 198, 0.856);
+    min-width: 300px;
+    max-width:840px ;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+footer > p {
+    transform: translate(22vw, 4vh);
+    position: absolute;
+    text-align: center;
 }
