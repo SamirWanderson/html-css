@@ -35,7 +35,7 @@ header > p {
     font-family: var(--fonte01);
     font-weight: 600;
     font-size: 1em;
-    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%)
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
     padding-top: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -64,7 +64,6 @@ a {
 a:hover {
     color: #9e0101;
     background-color: #ff0000;
-    text-decoration: underline;
     text-shadow: none;
     animation-duration: 1s;
 
@@ -83,6 +82,18 @@ main {
     min-width: 300px;
     max-width: 800px;
     box-shadow: 1px black;
+}
+
+.margem {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: var(--fonte01);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #00000057;
+    color:red ;
+    
 }
 
 footer {
