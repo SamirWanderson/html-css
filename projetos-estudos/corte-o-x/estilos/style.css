@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
     --fonte01:Arial, Verdana, Helvetica, sans-serif;
     --fonte02:'Bebas Neue', cursive;
-    --fonte03:'JetBrains Mono', monospace;
+    --fonte03: 'Open Sans', sans-serif;
 }
 
 * {
@@ -72,7 +72,18 @@ a:hover {
 
 body {
     background-color: #ebe5c5;
-    
+    margin-bottom: 30px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-family: var(--fonte01);
+    font-size: 1.8em;
+    text-shadow: 1px 1px 1px #00000057;
+    color:#530000;
 }
 
 main {
@@ -84,32 +95,59 @@ main {
     box-shadow: 1px black;
 }
 
+p {
+    font-family: var(--fonte03);
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+img {
+    width: 450px;
+
+    padding: 10px 1px;
+    display: block;
+    
+}
+
 .margem {
     margin-bottom: 10px;
 }
 
-h1 {
-    font-family: var(--fonte01);
-    font-size: 2em;
-    text-shadow: 1px 1px 1px #00000057;
-    color:red ;
-    
+section > h1 {
+    margin-bottom: 15px;
+}
+
+aside > h1 {
+    margin-bottom: 15px;
 }
 
 footer {
-    position: relative;
     font-family: var(--fonte01);
     border-radius: 0px 0px 8px 8px;
-    background-color: rgba(201, 198, 198, 0.856);
+    background-color: rgb(48, 48, 48);
     min-width: 300px;
-    max-width:840px ;
-    height: 100px;
+    max-width:840px;
+    height: 140px;
     text-align: center;
+    padding-bottom: 50px;
     margin: auto;
+    
+    
+}
+
+footer > h1 {
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+    padding: 8px;
 }
 
 footer > p {
-    transform: translate(22vw, 4vh);
-    position: absolute;
-    text-align: center;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 15px 10px 0px 10px;
+    
+    
 }
