@@ -122,6 +122,7 @@ aside > h1 {
 }
 
 footer {
+    position: relative;
     font-family: var(--fonte01);
     border-radius: 0px 0px 8px 8px;
     background-color: rgb(48, 48, 48);
@@ -129,10 +130,7 @@ footer {
     max-width:840px;
     height: 140px;
     text-align: center;
-    padding-bottom: 50px;
     margin: auto;
-    
-    
 }
 
 footer > h1 {
@@ -143,11 +141,9 @@ footer > h1 {
 }
 
 footer > p {
+    transform: translate(20px, 20px);
     font-size: 1.3em;
     color: rgb(255, 255, 255);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin: 15px 10px 0px 10px;
-    
+    display: inline;
     
 }
