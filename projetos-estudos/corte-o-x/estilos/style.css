@@ -141,9 +141,9 @@ footer > h1 {
 }
 
 footer > p {
-    transform: translate(20px, 20px);
-    font-size: 1.3em;
+    position: absolute;
+    transform: translate(0, 20%);
+    font-size: 1.5em;
     color: rgb(255, 255, 255);
-    display: inline;
-    
+    display: block;
 }
