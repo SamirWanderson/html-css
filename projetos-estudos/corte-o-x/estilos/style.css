@@ -65,14 +65,12 @@ a:hover {
     color: #9e0101;
     background-color: #ff0000;
     text-shadow: none;
-    animation-duration: 1s;
-
+    transition: all 0.5s;
 }
 
 
 body {
     background-color: #ebe5c5;
-    margin-bottom: 30px;
 }
 
 ::-webkit-scrollbar {
@@ -95,18 +93,16 @@ main {
     box-shadow: 1px black;
 }
 
-p {
+p,li, span {
     font-family: var(--fonte03);
     font-weight: 300;
     font-size: 1.1em;
 }
 
 img {
-    width: 450px;
-
+    width: 40vw;
     padding: 10px 1px;
     display: block;
-    
 }
 
 .margem {
@@ -119,6 +115,11 @@ section > h1 {
 
 aside > h1 {
     margin-bottom: 15px;
+}
+
+li {
+    padding: 10px;
+    list-style-position: inside;
 }
 
 footer {
