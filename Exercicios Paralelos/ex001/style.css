@@ -6,6 +6,8 @@
     padding: 15px;
     max-width: 300px;
     height: 300px;
+    display: flex;
+    justify-content: ;
 }
 
 .item {
