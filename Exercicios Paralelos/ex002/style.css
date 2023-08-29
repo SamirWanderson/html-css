@@ -6,6 +6,8 @@
     max-width: 300px;
     height: 300px;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .item {
@@ -13,4 +15,12 @@
     border: 2px solid blue;
     height: 50px;
     width: 50px;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
 }
