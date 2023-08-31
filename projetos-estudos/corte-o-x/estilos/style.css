@@ -42,16 +42,24 @@ header > p {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+.center {
+    text-align: center;
+}
+
 a {
     font-family: var(--fonte01);
     font-size: 1.2em;
     font-weight: bold;
     color: #ff0000;
     text-decoration: none;
+    text-align: center;
     text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
     padding: 3px;
     border-radius: 5px;
-    margin-bottom: 0px;
     margin-right: 10px;
 }
 
@@ -64,6 +72,7 @@ a:hover {
 
 body {
     background-color: #ebe5c5;
+    margin-bottom: 50px;
 }
 
 ::-webkit-scrollbar {
@@ -93,7 +102,7 @@ p,li, span {
 }
 
 img {
-    width: 50vw;
+    width: 500px;
     padding: 10px 1px;
     display: block;
 }
@@ -117,18 +126,16 @@ li {
 }
 
 footer {
-    position: relative;
+    margin: auto;
+    min-width: 300px;
+    max-width: 840px;
     font-family: var(--fonte01);
     border-radius: 0px 0px 8px 8px;
     background-color: rgb(48, 48, 48);
-    min-width: 300px;
-    max-width:840px;
-    height: 140px;
-    text-align: center;
-    margin: auto;
 }
-
+  
 footer > h1 {
+    text-align: center;
     background-color: black;
     color: white;
     font-size: 1.3em;
@@ -136,8 +143,8 @@ footer > h1 {
 }
 
 footer > p {
-    position: absolute;
-    transform: translate(0, 20%);
+    text-align: center;
+    padding: 10px 0px 25px 0px;
     font-size: 1.5em;
     color: rgb(255, 255, 255);
     display: block;
