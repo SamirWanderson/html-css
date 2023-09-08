@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    width: 100%;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 'logo menu menu menu'
+    'sidebar conteudo conteudo'
+    'rodape rodape';
+    gap: 10px;
+}
+
+.grid-item {
+    height: auto;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.conteudo {
+    grid-area: conteudo;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.rodape {
+    grid-area: rodape;
+}
