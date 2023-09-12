@@ -5,15 +5,17 @@ body {
 
 .grid-container {
     width: 100%;
+    height: 200px;
     border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 'logo menu menu menu'
-    'sidebar conteudo conteudo'
-    'rodape rodape';
+    grid-template: "logo menu menu menu" 100px
+                         "sidebar conteudo conteudo conteudo" 20px
+                         "rodape rodape rodape rodape" 60px;
     gap: 10px;
 }
+
 
 .grid-item {
     height: auto;
